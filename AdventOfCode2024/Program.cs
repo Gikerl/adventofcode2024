@@ -11,15 +11,15 @@ namespace AdventOfCode2024
             CultureInfo.DefaultThreadCurrentCulture = CultureInfo.InvariantCulture;
             CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.InvariantCulture;
 
-            var task = new Day03();
+            var task = new Day04();
             task.Run(false);
 
-            void BenchmarkAction()
-            {
-                var benchMarkTask = new Day03();
-                benchMarkTask.Run(true);
-            }
-            Benchmark(BenchmarkAction, 10000);
+            //void BenchmarkAction()
+            //{
+            //    var benchMarkTask = new Day04();
+            //    benchMarkTask.Run(true);
+            //}
+            //Benchmark(BenchmarkAction, 10000);
         }
 
         private static void Benchmark(Action act, int iterations)
