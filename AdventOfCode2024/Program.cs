@@ -11,8 +11,10 @@ namespace AdventOfCode2024
             CultureInfo.DefaultThreadCurrentCulture = CultureInfo.InvariantCulture;
             CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.InvariantCulture;
 
-            var task = new Day04();
+            var stopwatch = Stopwatch.StartNew();
+            var task = new Day07();
             task.Run(false);
+            Console.WriteLine($"Execution time: {(double)stopwatch.ElapsedMilliseconds:F3} ms: ");
 
             //void BenchmarkAction()
             //{
